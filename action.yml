@@ -7,5 +7,9 @@ runs:
   steps: 
     - run: echo Hello ${{ inputs.name }}.
       shell: bash
+
+    - uses: SAP/project-piper-action@master
+      with:
+        command: version
     - run: echo "Nice to meet you!"
       shell: pwsh
